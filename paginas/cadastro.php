@@ -29,6 +29,7 @@
 
             if ((senha1.value.length < 8)) {
                 alert('Não utilize menos de 8 caracteres na sua senha...')
+                senha1.focus();
                 return false;
             }
             
@@ -44,6 +45,7 @@
                     return true;
                 } else {
                     alert('Email inválido!');
+                    email.focus();
                     return false;
                 }
             }
