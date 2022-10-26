@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'gemunu';
+    src: url(../font/GemunuLibre-Regular.ttf) format('truetype');
+    src: url(../font/GemunuLibre-Light.ttf) format('truetype');
+    src: url(../font/GemunuLibre-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'tourney';
+    src: url(../font/Tourney-Regular.ttf) format('truetype');
+    src: url(../font/Tourney-Light.ttf) format('truetype');
+    src: url(../font/Tourney-ExtraBold.ttf) format('truetype');
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+:root{
+    --cor0: #222D4A;	/* Main Primary color */
+    --cor1: #4C5367;
+    --cor2: #323848;
+    --cor4: #040F2B;
+    --cor3: #111E42;
+
+    --font-padrao: 'gemunu', sans-serif;
+    --font-destaque: 'tourney', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: var(--font-padrao), 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(150deg, rgb(151, 174, 196),rgb(47, 54, 61));
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.form {
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.258);
+    color: white;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    border-radius: 20px 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.54);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.form h1 {
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    position: relative;
+    display: block;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.744);
+    padding: 5px 0px;
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.834),lightskyblue);
+    border-radius: 20px 0px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+h1 img {
+    position: relative;
+    display: inline-block;
+    transform: translate(24%, 12%);
+}
+
+h2 {
+    font-family: var(--font-destaque);
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.744);
+    padding: 5px;
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.834),lightskyblue);
+    border-radius: 20px 0px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.form > p {
+    font-size: 1.4em;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    padding: 5px 0px;
+    width: 380px;
+}
+
+form {
+    position: relative;
+    width: 400px;
+    height: max-content;
+    margin: auto;
+    text-align: center;
+}
+
+fieldset {
+    text-align: left;
+    padding: 5px;
+    padding-top: 2px;
+    margin: 10px;
+}
+
+fieldset > legend {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.718);
+    padding: 0px 2px;
+}
+
+fieldset input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    padding-top: 2px;
+    outline: none;
+    font-size: 1em;
+}
+
+.button {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    background-color: lightslategray;
+    padding: 8px 12px;
+    padding-top: 4px;
+    border: none;
+    border-radius: 5px;
+    margin:10px;
+    margin-bottom: 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.264);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+}
+
+.button:hover {
+    background-color: lightskyblue;
+    color: black;
+    text-shadow: none;
+}
+
+form > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+    color: rgb(255, 75, 75);
+}
