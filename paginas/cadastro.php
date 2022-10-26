@@ -11,6 +11,43 @@
     <title>Login</title>
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <script type="text/javascript">
+        function ValidaCampos(){
+            let senha1 = document.getElementById('senha1');
+            let senha2 = document.getElementById('senha2');
+            let data = document.getElementById('data');
+            let nome = document.getElementById('nome');
+            let email = document.getElementById('email');
+            let usuario = email.value.substring(0, email.value.indexOf("@"));
+            let dominio = email.value.substring(email.value.indexOf("@")+ 1, email.value.length);
+
+            if (senha1.value != senha2.value){
+                alert('As senhas não correspondem!');
+                senha2.focus();
+                return false;
+            }
+
+            if ((senha1.value.length < 8)) {
+                alert('Não utilize menos de 8 caracteres na sua senha...')
+                return false;
+            }
+            
+            if ((usuario.length >=1) &&
+                (dominio.length >=3) &&
+                (usuario.search("@")==-1) &&
+                (dominio.search("@")==-1) &&
+                (usuario.search(" ")==-1) &&
+                (dominio.search(" ")==-1) &&
+                (dominio.search(".")!=-1) &&
+                (dominio.indexOf(".") >=1)&&
+                (dominio.lastIndexOf(".") < dominio.length - 1)) {
+                    return true;
+                } else {
+                    alert('Email inválido!');
+                    return false;
+                }
+            }
+    </script>
 </head>
 <body>
     <div class="form">
@@ -48,7 +85,7 @@
                 }
             }else {
         ?>
-        <form class="formulario" action="cadastro.php" method="post" onsubmit="ValidaCampos()">
+        <form class="formulario" name="f1" action="cadastro.php" method="post" onsubmit="return ValidaCampos()">
             <h2>Cadastrar</h2>
 
             <fieldset><legend><label for="nome">Usuário</label></legend>
@@ -60,9 +97,9 @@
             <fieldset><legend><label for="email">E-mail</label></legend>
             <input type="text" name="email" id="email" required placeholder="Seu e-mail" autocomplete="email" maxlength="50" aria-describedby="emailHelp"></fieldset>
 
-            <fieldset><legend><label for="senha">Senha</label></legend><input type="password" name="senha1" id="senha1" required placeholder="Nova senha" autocomplete="new-password" maxlength="30"></fieldset>
+            <fieldset><legend><label for="senha">Senha</label></legend><input type="password" name="senha1" id="senha1" required placeholder="Faça uma senha forte..." autocomplete="new-password" maxlength="30"></fieldset>
 
-            <fieldset><legend><label for="senha2">Confirmação de Senha</label></legend><input type="password" name="senha2" id="senha2" required placeholder="Mesma senha novamente" maxlength="30"></fieldset>
+            <fieldset><legend><label for="senha2">Confirmação de Senha</label></legend><input type="password" name="senha2" id="senha2" required placeholder="Mesma senha novamente..." maxlength="30"></fieldset>
 
             <input class="button" type="submit" name="btnSubmitUsuario" value="Cadastrar">
             <a class="button" href="../index.php">Voltar</a>

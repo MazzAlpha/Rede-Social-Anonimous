@@ -17,7 +17,7 @@
         <?php
             if (isset($_POST['SubmitUsuario'])) {
                 $login = $_POST['login'];
-                $senha = $_POST['senha1'];
+                $senha = $_POST['senha'];
                 $sql = "call sp_logar_usuario('$login', '$senha', @saida, @rotulo)";
                 if($res=mysqli_query($con, $sql)){
                     $reg=mysqli_fetch_assoc($res);
@@ -33,6 +33,11 @@
                     }
                     ?>
                     <div class="alert <?php echo $alert;?>" role="alert">
+                    <?php if($rotulo == 'Tudo certo!'){
+                        header("Location: paginas/pessoal.php");
+
+                        die();
+                    }?>
                     <h2><?php echo $rotulo; ?></h2>
                     <?php echo $saida; ?>
                     <a href="index.php" class="button" target="_self">Voltar</a>
@@ -47,7 +52,7 @@
         <p>Rede anônima sem viés político nem coleta de dados pessoais.</p>
         <form class="formulario" method="post">
             <fieldset><legend><label for="login">Usuário</label></legend>
-            <input type="text" name="login" id="login" required placeholder="Nome de usuário" autocomplete="username"></fieldset>
+            <input type="text" name="login" id="login" required placeholder="Nome de usuário ou e-mail" autocomplete="username" autocomplete="email"></fieldset>
             <fieldset><legend><label for="senha">Senha</label></legend><input type="password" name="senha" id="senha" required placeholder="Senha do usuário" autocomplete="current-password"></fieldset>
             <input class="button" type="submit" value="Entrar" name="SubmitUsuario">
             <a class="link" href="#">Esqueci a senha</a>
