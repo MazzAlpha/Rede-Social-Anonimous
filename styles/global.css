@@ -43,41 +43,26 @@
     font-family: var(--font-padrao), 'Segoe UI', Tahoma, sans-serif;
 }
 
-body {
-    background: linear-gradient(150deg, rgb(151, 174, 196),rgb(47, 54, 61));
+::-webkit-scrollbar{
+    display: none;
+}
+
+html, body {
     width: 100vw;
     height: 100vh;
+}
+
+body {
+    background: linear-gradient(150deg, #bbdeff, #2f363d);
     position: relative;
 }
 
 header {
     background-color: rgba(0, 0, 0, 0.371);
     display: block;
-    position: relative;
+    position: absolute;
     width: 100vw;
-    height: 100px;
-}
-
-.button {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1em;
-    color: white;
-    background-color: lightslategray;
-    padding: 8px 12px;
-    padding-top: 4px;
-    border: none;
-    border-radius: 5px;
-    margin:10px;
-    margin-bottom: 0px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.264);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
-}
-
-.button:hover {
-    background-color: lightskyblue;
-    color: black;
-    text-shadow: none;
+    height: 30px;
 }
 
 footer {

@@ -15,13 +15,8 @@
 <body>
     <header>
         <img src="../images/Logo-50.png" alt="Logo MazzAlpha">
-        <a class="button" href="../index.php">Logoff</a>
+        <a class="button" href="../index.php" onsubmit="death">Logoff</a>
     </header>
-    <div>
-
-    </div>
-<footer>
-    <p>© MazzAlpha</p>
-</footer>
+    
 </body>
 </html>
