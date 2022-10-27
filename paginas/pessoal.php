@@ -14,16 +14,19 @@
 </head>
 <header>
         <img src="../images/Logo-50.png" alt="Logo MazzAlpha">
-        <a class="button" href="../index.php" onclick="die()">Logoff</a>
+        <a class="button" href="../index.php">Logoff</a>
     </header>
 <body>
-    <subheader>
-        <div class="background">
-        </div>
-    </subheader>
-
+    <div class="subheader">
+        <div class="background"></div>
+        <div class="imguser"><img src="../images/perfil.jpg" alt="Imagem Perfil Usuario"></div>
+        <div class="nameuser"><h1>Juan Mazzaro</h1></div>
+    </div>
     <main>
-        
+        <div class="posts">
+            <input class="into" type="text" name="txtarea" id="txtarea">
+            <input class="button" type="button" value="enviar">
+        </div>
     </main>    
 </body>
 <footer>
