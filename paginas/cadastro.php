@@ -79,7 +79,7 @@
                     <div class="alert <?php echo $alert;?>" role="alert">
                     <h2><?php echo $rotulo; ?></h2>
                     <?php echo $saida; ?>
-                    <a href="cadastro.php" class="button" target="_self">Voltar</a>
+                    <a href="../index.php" class="button" target="_self">Voltar</a>
                     </div>
                 <?php
                 } else {

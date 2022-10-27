@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+header > img {
+    margin-left: 20px;
+}
+
+header > a {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: max-content;
+    height: max-content;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    background-color: lightslategray;
+    padding: 8px 12px;
+    padding-top: 4px;
+    border: none;
+    border-radius: 5px;
+    margin:10px;
+    margin-bottom: 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.264);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+}
+
+.button:hover {
+    background-color: lightskyblue;
+    color: black;
+    text-shadow: none;
+}

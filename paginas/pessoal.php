@@ -9,18 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/pessoal.css">
     <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
 </head>
 <body>
-    <div class="form">
-        <h1><img src="../images/Logo-50.png" alt="Logo MazzAlpha"> nonimous</h1>
-        <p>Você está logado!</p>
-            <a href="../index.php" class="button" target="_self">Sair</a>
-        </form>
+    <header>
+        <img src="../images/Logo-50.png" alt="Logo MazzAlpha">
+        <a class="button" href="../index.php">Logoff</a>
+    </header>
+    <div>
+
     </div>
-    <footer>
-        <p>© MazzAlpha</p>
-    </footer>
+<footer>
+    <p>© MazzAlpha</p>
+</footer>
 </body>
 </html>

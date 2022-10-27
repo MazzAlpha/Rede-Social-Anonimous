@@ -1,55 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'gemunu';
-    src: url(../font/GemunuLibre-Regular.ttf) format('truetype');
-    src: url(../font/GemunuLibre-Light.ttf) format('truetype');
-    src: url(../font/GemunuLibre-ExtraBold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'tourney';
-    src: url(../font/Tourney-Regular.ttf) format('truetype');
-    src: url(../font/Tourney-Light.ttf) format('truetype');
-    src: url(../font/Tourney-ExtraBold.ttf) format('truetype');
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-:root{
-    --cor0: #222D4A;	/* Main Primary color */
-    --cor1: #4C5367;
-    --cor2: #323848;
-    --cor4: #040F2B;
-    --cor3: #111E42;
-
-    --font-padrao: 'gemunu', sans-serif;
-    --font-destaque: 'tourney', sans-serif;
-}
-
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    color: white;
-    font-family: var(--font-padrao), 'Segoe UI', Tahoma, sans-serif;
-}
-
-body {
-    background: linear-gradient(150deg, rgb(151, 174, 196),rgb(47, 54, 61));
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
-
 .form {
     position: absolute;
     display: block;
@@ -134,28 +84,6 @@ fieldset input {
     padding-top: 2px;
     outline: none;
     font-size: 1em;
-}
-
-.button {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1em;
-    color: white;
-    background-color: lightslategray;
-    padding: 8px 12px;
-    padding-top: 4px;
-    border: none;
-    border-radius: 5px;
-    margin:10px;
-    margin-bottom: 0px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.264);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
-}
-
-.button:hover {
-    background-color: lightskyblue;
-    color: black;
-    text-shadow: none;
 }
 
 form > a {
