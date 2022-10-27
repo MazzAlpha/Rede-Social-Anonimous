@@ -50,7 +50,7 @@
         ?>
         <h1><img src="images/Logo-50.png" alt="Logo MazzAlpha"> nonimous</h1>
         <p>Rede anônima sem viés político nem coleta de dados pessoais.</p>
-        <form class="formulario" method="post">
+        <form class="formulario" method="post" autocomplete="on">
             <fieldset><legend><label for="login">Usuário</label></legend>
             <input type="text" name="login" id="login" required placeholder="Nome de usuário ou e-mail" autocomplete="username" autocomplete="email"></fieldset>
             <fieldset><legend><label for="senha">Senha</label></legend><input type="password" name="senha" id="senha" required placeholder="Senha do usuário" autocomplete="current-password"></fieldset>
@@ -62,10 +62,11 @@
             }
         ?>
     </div>
-    <footer>
-        <p>© MazzAlpha</p>
-    </footer>
+    
     <!--Fim da conexão com banco de dados-->
     <?php if(isset($con)){ mysqli_close($con);} ?>
 </body>
+<footer>
+    <p>© MazzAlpha</p>
+</footer>
 </html>

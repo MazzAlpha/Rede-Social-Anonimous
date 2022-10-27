@@ -12,11 +12,21 @@
     <link rel="stylesheet" href="../styles/pessoal.css">
     <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
 </head>
-<body>
-    <header>
+<header>
         <img src="../images/Logo-50.png" alt="Logo MazzAlpha">
-        <a class="button" href="../index.php" onsubmit="death">Logoff</a>
+        <a class="button" href="../index.php" onclick="die()">Logoff</a>
     </header>
-    
+<body>
+    <subheader>
+        <div class="background">
+        </div>
+    </subheader>
+
+    <main>
+        
+    </main>    
 </body>
+<footer>
+    <p>© MazzAlpha</p>
+</footer>
 </html>
