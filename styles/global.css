@@ -53,7 +53,7 @@ html, body {
 }
 
 body {
-    background-color:  #ffffff;
+    background: linear-gradient(150deg, #98e0ff, #2f363d);
     position: relative;
 }
 
