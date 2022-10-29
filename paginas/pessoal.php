@@ -25,7 +25,7 @@
     <main>
         <div class="posts">
             <input class="into" type="text" name="txtarea" id="txtarea">
-            <input class="button" type="button" value="enviar">
+            <input class="buttonpost" type="button" value="enviar">
         </div>
     </main>    
 </body>

@@ -52,11 +52,6 @@ html, body {
     height: 100%;
 }
 
-body {
-    background: linear-gradient(150deg, #98e0ff, #2f363d);
-    position: relative;
-}
-
 header {
     width: 100vw;
     background: linear-gradient(150deg, #ffffff,#2f363d);

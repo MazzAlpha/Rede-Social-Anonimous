@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body {
+    background: linear-gradient(150deg, #bfe4ff, #2f363d);
+    position: relative;
+}
+
 .form {
     position: absolute;
     display: block;
