@@ -57,8 +57,8 @@ body {
     width: 150px;
     height: 150px;
     left: 50%;
-    top: 35%;
-    position: absolute;
+    top: -44%;
+    position: relative;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -67,11 +67,21 @@ body {
     transform: translate(-50%);
 }
 
-.imguser img {
+.imguser .perfil {
+    border-radius: 50%;
     height: 110%;
-    position: absolute;
-    top: 45%;
+    position: relative;
+    top: 52%;
     left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iconuser {
+    width: 25px;
+    position: relative;
+    display: block;
+    top: -10%;
+    left: 80%;
     transform: translate(-50%, -50%);
 }
 
@@ -120,4 +130,12 @@ body {
     border-radius: 50px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.264);
     transform: translate(-50%, -50%);
+}
+
+.iconback {
+    width: 25px;
+    position: relative;
+    display: block;
+    top: 88%;
+    left: 94%;
 }

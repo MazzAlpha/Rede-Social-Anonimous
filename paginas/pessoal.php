@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/pessoal.css">
     <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
+    <script src="js/scripts.js"></script>
 </head>
 <header>
         <img src="../images/Logo-50.png" alt="Logo MazzAlpha">
@@ -18,8 +19,11 @@
     </header>
 <body>
     <div class="subheader">
-        <div class="background"></div>
-        <div class="imguser"><img src="../images/perfil.jpg" alt="Imagem Perfil Usuario"></div>
+        <div class="background"><img class="iconback" src="../images/cam-icon2.ico" alt="Ícone Camera"></div>
+        
+        <img class="iconuser" src="../images/cam-icon2.ico" alt="Ícone Camera">
+        <div class="imguser"><img class="perfil" src="../images/perfil.jpg" alt="Imagem Perfil Usuario"></div>
+        
         <div class="nameuser"><h1>Juan Mazzaro</h1></div>
     </div>
     <main>
